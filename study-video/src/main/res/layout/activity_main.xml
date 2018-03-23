@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/rl_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent">
+
+        <activity.cqdsj.cn.study_videoplay.view.MyVideoView
+            android:id="@+id/mvv_vidoe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_full_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchHor"
+        android:text="全屏播放"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
