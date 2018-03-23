@@ -30,6 +30,7 @@ public class JZResizeTextureView extends TextureView {
         super(context, attrs);
         currentVideoWidth = 0;
         currentVideoHeight = 0;
+
     }
 
     public void setVideoSize(int currentVideoWidth, int currentVideoHeight) {
